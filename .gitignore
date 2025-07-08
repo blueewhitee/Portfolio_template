@@ -2,7 +2,11 @@
 
 # dependencies
 /node_modules
-public/
+# Ignore everything in public directory
+public/*
+
+# Keep the public directory itself by adding a .gitkeep file
+!public/.gitkeep
 
 # next.js
 /.next/
