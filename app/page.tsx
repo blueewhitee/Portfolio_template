@@ -3,7 +3,7 @@
 import { useState } from "react"
 import Image from "next/image"
 import { motion } from "framer-motion"
-import { Github, Linkedin, Mail, ExternalLink, Camera, PenTool, MoreVertical } from "lucide-react"
+import { Github, Linkedin, Mail, ExternalLink, Camera, PenTool, MoreVertical, FileText } from "lucide-react"
 import Masonry from "react-masonry-css"
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
@@ -91,6 +91,8 @@ export default function Portfolio() {
               { name: "Projects", icon: <ExternalLink className="h-4 w-4" /> },
               { name: "I Click", icon: <Camera className="h-4 w-4" /> },
               { name: "Writings", icon: <PenTool className="h-4 w-4" /> },
+              { name: "Mail", icon: <Mail className="h-4 w-4" /> },
+              { name: "Resume", icon: <FileText className="h-4 w-4" /> },
             ].map((item) => (
               <button
                 key={item.name}
